@@ -22,8 +22,8 @@ import com.acmerobotics.roadrunner.util.Angle;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.util.MovingStatistics;
-import org.firstinspires.ftc.teamcode.rr_quickstart_examples.drive.DriveConstants;
-import org.firstinspires.ftc.teamcode.rr_quickstart_examples.drive.SampleMecanumDrive;
+import org.firstinspires.ftc.teamcode.drive.SampleMecanumDrive;
+import org.firstinspires.ftc.teamcode.drive.DriveConstants;
 
 /*
  * This routine determines the effective track width. The procedure works by executing a point turn

@@ -17,7 +17,7 @@ package org.firstinspires.ftc.teamcode.drive.opmode;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import org.firstinspires.ftc.teamcode.rr_quickstart_examples.drive.SampleMecanumDrive;
+import org.firstinspires.ftc.teamcode.drive.SampleMecanumDrive;
 
 /*
  * This is a simple routine to test turning capabilities.

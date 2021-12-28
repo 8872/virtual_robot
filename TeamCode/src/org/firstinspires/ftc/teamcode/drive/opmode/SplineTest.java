@@ -19,7 +19,8 @@ import com.acmerobotics.roadrunner.trajectory.Trajectory;
 import com.acmerobotics.roadrunner.trajectory.TrajectoryBuilder;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import org.firstinspires.ftc.teamcode.rr_quickstart_examples.drive.SampleMecanumDrive;
+import org.firstinspires.ftc.teamcode.drive.SampleMecanumDrive;
+import org.firstinspires.ftc.teamcode.drive.SampleMecanumDrive;
 
 /*
  * This is an example of a more complex path to really test the tuning.
@@ -39,7 +40,7 @@ public class SplineTest extends LinearOpMode {
 //                .splineTo(new Pose2d(30, 30, 0))
 //                .build();
 
-        Trajectory traj = new TrajectoryBuilder(new Pose2d(), drive.constraints)
+        Trajectory traj = drive.trajectoryBuilder(new Pose2d())
                 .splineTo(new Vector2d(30, 30), 0)
                 .build();
 
@@ -55,7 +56,7 @@ public class SplineTest extends LinearOpMode {
 
 
         drive.followTrajectory(
-                new TrajectoryBuilder(new Pose2d(30, 30, Math.toRadians(0)), drive.constraints)
+                drive.trajectoryBuilder(traj.end(), true)
                         .splineTo(new Vector2d(0, 0), Math.toRadians(180))
                         .build()
         );
